@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfa838f4959e425dc400004035594a5e",
+    "content-hash": "4af4d4af1564baa7d321301cfc26ca50",
     "packages": [
         {
             "name": "brick/math",
@@ -1313,6 +1313,70 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.1.25"
             },
             "time": "2024-08-12T22:06:33+00:00"
+        },
+        {
+            "name": "laravel/sanctum",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sanctum.git",
+                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
+                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/console": "^11.0",
+                "illuminate/contracts": "^11.0",
+                "illuminate/database": "^11.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^9.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Sanctum\\SanctumServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Sanctum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+            "keywords": [
+                "auth",
+                "laravel",
+                "sanctum"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/sanctum/issues",
+                "source": "https://github.com/laravel/sanctum"
+            },
+            "time": "2024-04-10T19:39:58+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -5387,6 +5451,350 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-action-generator",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-action-generator.git",
+                "reference": "b8e11947ce33856614cedbf38445e064b7f8ff48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-action-generator/zipball/b8e11947ce33856614cedbf38445e064b7f8ff48",
+                "reference": "b8e11947ce33856614cedbf38445e064b7f8ff48",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\ActionGenerator\\ActionGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\ActionGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel actions",
+            "homepage": "https://github.com/timwassenburg/laravel-action-generator",
+            "keywords": [
+                "action",
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-action-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-action-generator/tree/v1.0.0"
+            },
+            "time": "2021-11-14T10:48:29+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-artisan-extender",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-artisan-extender.git",
+                "reference": "1dd6af3ed35f9fc316fdbc885f9c5296c42d0771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-artisan-extender/zipball/1dd6af3ed35f9fc316fdbc885f9c5296c42d0771",
+                "reference": "1dd6af3ed35f9fc316fdbc885f9c5296c42d0771",
+                "shasum": ""
+            },
+            "require": {
+                "timwassenburg/laravel-action-generator": "^v1.0.0",
+                "timwassenburg/laravel-pivot-table-generator": "^v1.0.0",
+                "timwassenburg/laravel-repository-generator": "^v1.0.0",
+                "timwassenburg/laravel-service-generator": "^v1.0.0",
+                "timwassenburg/laravel-trait-generator": "^v1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\ArtisanExtender\\ArtisanExtenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\ArtisanExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "A collection of generators for Laravel",
+            "homepage": "https://github.com/timwassenburg/laravel-artisan-extender",
+            "keywords": [
+                "action",
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php",
+                "respository",
+                "service"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-artisan-extender/issues",
+                "source": "https://github.com/timwassenburg/laravel-artisan-extender/tree/v1.0.0"
+            },
+            "time": "2023-04-21T15:51:44+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-pivot-table-generator",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-pivot-table-generator.git",
+                "reference": "d1ad041ebdd777ea5909bd24047cb0c9020a6b54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-pivot-table-generator/zipball/d1ad041ebdd777ea5909bd24047cb0c9020a6b54",
+                "reference": "d1ad041ebdd777ea5909bd24047cb0c9020a6b54",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.5",
+                "pestphp/pest": "^2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\PivotTableGenerator\\PivotTableGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\PivotTableGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Quickly generate pivot tables for your projects",
+            "homepage": "https://github.com/timwassenburg/laravel-pivot-table-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "migrations",
+                "php",
+                "pivot"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-pivot-table-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-pivot-table-generator/tree/v1.0.1"
+            },
+            "time": "2023-04-27T13:27:39+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-repository-generator",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-repository-generator.git",
+                "reference": "05e0688b4a7070749f10a9f4af9510c7bca47c33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-repository-generator/zipball/05e0688b4a7070749f10a9f4af9510c7bca47c33",
+                "reference": "05e0688b4a7070749f10a9f4af9510c7bca47c33",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.5",
+                "pestphp/pest": "^2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\RepositoryGenerator\\RepositoryGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\RepositoryGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel repositories",
+            "homepage": "https://github.com/timwassenburg/laravel-repository-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-repository-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-repository-generator/tree/v1.0.3"
+            },
+            "time": "2023-04-27T11:06:12+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-service-generator",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-service-generator.git",
+                "reference": "9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-service-generator/zipball/9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc",
+                "reference": "9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.5",
+                "pestphp/pest": "^2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\ServiceGenerator\\Http\\Providers\\CommandServiceProvider",
+                        "TimWassenburg\\ServiceGenerator\\ServiceGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\ServiceGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel services",
+            "homepage": "https://github.com/timwassenburg/laravel-service-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php",
+                "services"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-service-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-service-generator/tree/v1.0.5"
+            },
+            "time": "2023-04-27T09:49:57+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-trait-generator",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-trait-generator.git",
+                "reference": "c76923f663343c30381e918a25a8f1db6c517d0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-trait-generator/zipball/c76923f663343c30381e918a25a8f1db6c517d0f",
+                "reference": "c76923f663343c30381e918a25a8f1db6c517d0f",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\TraitGenerator\\TraitGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\TraitGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel Traits",
+            "homepage": "https://github.com/timwassenburg/laravel-trait-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php",
+                "trait"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-trait-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-trait-generator/tree/v1.0.0"
+            },
+            "time": "2023-04-21T15:43:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
